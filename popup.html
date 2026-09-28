@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Better X</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <div class="brand" aria-hidden="true"><img src="icons/icon-128.png" alt=""></div>
+      <div>
+        <h1>Better X</h1>
+        <p>Deixe o X do seu jeito.</p>
+      </div>
+    </header>
+
+    <main id="settings">
+      <section>
+        <h2>Menu lateral</h2>
+        <label><span>Follow</span><input type="checkbox" data-setting="navFollow"><i></i></label>
+        <label><span>Chat</span><input type="checkbox" data-setting="navChat"><i></i></label>
+        <label><span>Grok</span><input type="checkbox" data-setting="navGrok"><i></i></label>
+        <label><span>History</span><input type="checkbox" data-setting="navHistory" data-default="false"><i></i></label>
+        <label><span>Creator Studio</span><input type="checkbox" data-setting="navCreatorStudio"><i></i></label>
+        <label><span>Premium</span><input type="checkbox" data-setting="navPremium"><i></i></label>
+      </section>
+
+      <section>
+        <h2>Coluna direita</h2>
+        <label><span>Subscribe to Premium</span><input type="checkbox" data-setting="premiumCard"><i></i></label>
+        <label><span>Today's News</span><input type="checkbox" data-setting="todaysNews"><i></i></label>
+        <label><span>What's happening</span><input type="checkbox" data-setting="whatsHappening"><i></i></label>
+        <label><span>Relevant people</span><input type="checkbox" data-setting="relevantPeople"><i></i></label>
+        <label><span>You might like / Who to follow</span><input type="checkbox" data-setting="youMightLike"><i></i></label>
+        <label><span>Avisos legais</span><input type="checkbox" data-setting="legalFooter"><i></i></label>
+      </section>
+
+      <section>
+        <h2>Outros</h2>
+        <label><span>Busca no topo + feed amplo</span><input type="checkbox" data-setting="wideLayout"><i></i></label>
+        <label><span>Linha divisória lateral</span><input type="checkbox" data-setting="sideDivider"><i></i></label>
+        <label><span>Banner Get Verified</span><input type="checkbox" data-setting="verifiedBanner"><i></i></label>
+        <label><span>Botão flutuante do Grok</span><input type="checkbox" data-setting="floatingGrok"><i></i></label>
+        <label><span>Botão flutuante do Chat</span><input type="checkbox" data-setting="floatingChat"><i></i></label>
+      </section>
+    </main>
+
+    <footer>
+      <button id="toggle-all" type="button">Mostrar tudo</button>
+      <span id="status" role="status" aria-live="polite"></span>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

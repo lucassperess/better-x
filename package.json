@@ -1,0 +1,15 @@
+{
+  "name": "better-x",
+  "version": "0.11.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucassperess/better-x.git"
+  },
+  "description": "Personalize o X com controles simples para Brave e Chromium.",
+  "scripts": {
+    "test": "node --check content.js && node --check popup.js && node --test tests/*.test.cjs"
+  },
+  "engines": { "node": ">=22" }
+}
